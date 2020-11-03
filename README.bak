@@ -1,3 +1,16 @@
+# Release steps
+
+```
+yarn auto changelog
+git reset HEAD^
+git add CHANGELOG.md
+git commit -m "Changelog for v0.1.0 [skip ci]"
+npm version 0.1.0 -m "Bump version to: %s [skip ci]"
+npm publish
+git push --follow-tags origin master
+yarn auto release
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
