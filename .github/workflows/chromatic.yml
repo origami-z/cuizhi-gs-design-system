@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     # the list of steps that the action will go through
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Required to retrieve git history
       - run: yarn
       - uses: chromaui/action@v1
         # options required to the GitHub chromatic action
         with:
-          projectToken: project-token
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
