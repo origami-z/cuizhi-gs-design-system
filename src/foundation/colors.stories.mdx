@@ -1,0 +1,15 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { ColorDocsRow } from "./colors.docs";
+import * as colors from "./colors";
+
+<Meta title="Design System/Foundation/Colors" />
+
+# Colors
+
+<Canvas>
+  <Story name="Brand Tokens" args={{}}>
+    {Object.entries(colors.brandTokens).map((token) => (
+      <ColorDocsRow name={token[0]} color={token[1]} />
+    ))}
+  </Story>
+</Canvas>
