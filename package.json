@@ -4,6 +4,8 @@
   "private": false,
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "npm run clean",
+    "clean": "rimraf dist",
     "build": "cross-env BABEL_ENV=production babel src -d dist --extensions '.ts'",
     "build:cra": "react-scripts build",
     "test": "react-scripts test",
