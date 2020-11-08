@@ -19,3 +19,45 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Goldman Sachs Restricted Font License
+
+Copy from https://design.gs.com/d/legal/goldman-sans-license
+
+A. Background
+Goldman Sachs & Co. LLC (“Goldman Sachs”) owns the copyright interests in and to a font style entitled “Goldman Sans” (“Licensed Font”). Goldman Sachs is providing this license of the Licensed Font software (the “License”) free of charge as long as it is used in compliance with this License.
+
+B. Definitions
+A “Font” is a typeface that can be used for text, character display, HTML, style sheets, and the like; it includes the normal character set, as well as additional font styles such as underlined, bold, and italicized.
+
+“Licensed Font Software” refers to the set of files released by Goldman Sachs under this License to the Goldman Sans Font, and may include source files, build scripts and documentation.
+
+C. Grant and Scope of License
+By reproducing, distributing, publicly displaying or otherwise using the Licensed Font Software, you agree to abide by this License. Anyone who uses the Licensed Font Software is a “User,” regardless of how, where, or from whom the Licensed Font Software is obtained.
+
+The User is hereby granted a limited, royalty-free, nonexclusive, and revocable license to use, reproduce, and distribute unmodified copies of the Licensed Font Software, subject to the following conditions:
+
+a. The User may not modify or make derivative works of or sell (by itself or with any other item or software), sub-license, bundle, or embed copies of the Licensed Font Software.
+
+b. The User may not use the Licensed Font Software in any “open source” or other code that would create any obligation for Goldman Sachs to: (i) grant to any third party any intellectual property or other proprietary rights; (ii) disclose or make any source code or any part or derivative work thereof available to third parties under any circumstances; or (iii) otherwise subject Goldman Sachs to any obligations not expressly set forth in this License.
+
+c. The User may not use the Licensed Font Software to suggest any affiliation with or endorsement by Goldman Sachs.
+
+d. If a User distributes a copy of the Licensed Font Software, each copy shall bear an appropriate copyright notice in substantially the form of “© 2020 Goldman Sachs & Co. LLC. All rights reserved.” and a copy of this License. The Licensed Font Software must be distributed entirely under this License and must not be distributed under any other license. The requirement for the Licensed Font Software to remain under this License does not apply to any document created using the Licensed Font Software.
+
+User expressly agrees that all proprietary right, title, and interest in and to and control of the Licensed Font Software are and shall at all times be solely owned by Goldman Sachs and hereby acknowledges that nothing contained in this License shall give User any right, title. or interest in or to the ownership or use of the Licensed Font Software, except the restricted use provided herein.
+
+D. Trademarks
+“GOLDMAN,” “GOLDMAN SACHS,” and “GOLDMAN SANS” (collectively the “Trademarks”) are trademarks of Goldman Sachs or its affiliates. “GOLDMAN SANS” may be used by licensed Users only to identify the Licensed Font or Licensed Font Software. The name(s) of Goldman Sachs or the Trademarks shall not be used to promote, endorse or advertise any User, or to suggest any affiliation with or endorsement by Goldman Sachs. Users shall not otherwise use or attempt to register the Trademarks or any confusingly similar marks.
+
+E. Term and Termination of the License
+The term of the License is for the unexpired term of, and for so long as Goldman Sachs owns, the copyright on the Licensed Font Software, or any renewal thereof.
+This License shall terminate and become null and void for any use that does not comply with any of the conditions in this License. Goldman Sachs may, at its sole discretion, terminate this License at any time. Goldman Sachs’s exercise of any right of termination does not constitute a waiver of other rights and remedies available to Goldman Sachs.
+F. Disclaimer of Warranties; Limitation of Liability
+THE LICENSED FONT SOFTWARE IS PROVIDED “AS IS” AND “WITH ALL FAULTS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF QUALITY, ACCURACY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL GOLDMAN SACHS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY DIRECT, LOST PROFIT, LOST REVENUE, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT, UNDER ANY WARRANTY OR ANY OTHER THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THIS LICENSE, THE USE OR INABILITY TO USE THE LICENSED FONT SOFTWARE OR FROM OTHER DEALINGS IN THE LICENSED FONT SOFTWARE, EVEN IF IT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE RISK OF THE PERFORMANCE AND QUALITY OF LICENSED FONT SOFTWARE IS STRICTLY ON THE USER AND THE USER MUST REPAIR THE LICENSED FONT SOFTWARE AT THEIR OWN EXPENSE.
+
+G. Governing Law
+This License shall be governed by and construed under the laws of the State of New York. The User and Goldman Sachs hereby waive any right to a trial by jury and consent to exclusive jurisdiction of the U.S. District Court for the Southern District of New York or, if federal jurisdiction is lacking, New York Supreme Court, New York County, for the resolution of any dispute regarding this License or the parties’ relationship arising therefrom.
+
+H. Entire Agreement; Amendment Without Notice
+This is the entire agreement with respect to its subject matter. This License may be amended at any time by Goldman Sachs without notice.
