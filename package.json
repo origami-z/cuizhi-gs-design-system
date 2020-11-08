@@ -4,10 +4,14 @@
   "private": false,
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "prebuild": "npm run clean",
+    "clean": "rimraf dist",
+    "build": "cross-env BABEL_ENV=production babel src -d dist --extensions '.ts'",
     "build:cra": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
+    "test:cra": "react-scripts test",
     "eject": "react-scripts eject",
+    "check-types": "tsc",
     "storybook": "start-storybook -p 6006 -s public --no-dll",
     "build-storybook": "build-storybook -s public --no-dll --docs",
     "chromatic": "npx chromatic --project-token CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes",
@@ -49,7 +53,11 @@
     "styled-components": "5.2.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
     "@storybook/addon-a11y": "^6.0.28",
     "@storybook/addon-actions": "^6.0.28",
     "@storybook/addon-essentials": "^6.0.28",
@@ -75,7 +83,8 @@
     "prettier": "^2.1.2",
     "react-is": "^17.0.1",
     "react-scripts": "4.0.0",
-    "typescript": "^4.0.3"
+    "ts-jest": "^26.4.3",
+    "typescript": "^4.0.5"
   },
   "description": "Another implementation of GS Design System",
   "main": "index.js",

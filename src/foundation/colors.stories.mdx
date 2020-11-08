@@ -1,15 +1,116 @@
 import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 import { ColorDocsRow } from "./colors.docs";
 import * as colors from "./colors";
+import { camelToSentenceCase } from "../utils/changeCase";
 
-<Meta title="Design System/Foundation/Colors" />
+<Meta title="Foundation/Colors" />
 
 # Colors
 
-<Canvas>
-  <Story name="Brand Tokens" args={{}}>
-    {Object.entries(colors.brandTokens).map((token) => (
-      <ColorDocsRow name={token[0]} color={token[1]} />
-    ))}
-  </Story>
-</Canvas>
+## Base Colors
+
+<Story name="Base Colors" args={{}}>
+  {Object.entries(colors.paletteColors).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
+
+## Brand Tokens
+
+<Story name="Brand Tokens" args={{}}>
+  {Object.entries(colors.brandTokens).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
+
+## Surface Tokens
+
+<Story name="Surface Tokens" args={{}}>
+  {Object.entries(colors.surfaceTokens).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
+
+## Border Tokens
+
+<Story name="Border Tokens" args={{}}>
+  {Object.entries(colors.borderTokens).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
+
+## Button Tokens
+
+<Story name="Button Tokens" args={{}}>
+  {Object.entries(colors.buttonTokens).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
+
+## Text Tokens
+
+<Story name="Text Tokens" args={{}}>
+  {Object.entries(colors.textTokens).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
+
+## Icon Tokens
+
+<Story name="Icon Tokens" args={{}}>
+  {Object.entries(colors.iconTokens).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
+
+## Form Tokens
+
+<Story name="Form Tokens" args={{}}>
+  {Object.entries(colors.formTokens).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
+
+## Status Tokens
+
+<Story name="Status Tokens" args={{}}>
+  {Object.entries(colors.statusTokens).map((token) => (
+    <ColorDocsRow
+      name={camelToSentenceCase(token[0])}
+      color={token[1]}
+      key={token[0]}
+    />
+  ))}
+</Story>
