@@ -1,0 +1,30 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { Badge, ColorValues } from "./Badge";
+import { BadgeStoryContainer, StyledBadgeContainer } from "./Badge.docs";
+
+<Meta title="Design System/Badge" component={Badge} />
+
+export const Template = (args) => <Badge {...args} />;
+
+# Badge
+
+With `MDX` we can define a story for `Badge` right in the middle of our
+Markdown documentation.
+
+<!--- This is your Story template function, shown here in React -->
+
+<Story name="All">
+  <BadgeStoryContainer heading="Bold">
+    {ColorValues.map((colorValue) => (
+      <StyledBadgeContainer>
+        <Badge label={colorValue} color={colorValue} />
+      </StyledBadgeContainer>
+    ))}
+  </BadgeStoryContainer>
+</Story>
+
+<Canvas>
+  <Story name="Usage" args={{ label: "badge" }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
