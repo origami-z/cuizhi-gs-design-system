@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 import {
+  borderTokens,
   colorRampsBoldTokens,
+  colorRampsSubtleTokens,
   colorRampsTextBoldTokens,
+  colorRampsTextSubtleTokens,
 } from "../foundation/colors";
 
 // To be shared with other components
@@ -48,26 +51,62 @@ export interface IBadgeProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
 //   return colorName in ColorValues;
 // }
 
-const StyledBadge = styled.div`
-  padding: 6px 10px;
-  background: ${(props: Partial<IBadgeProps>) =>
-    colorRampsBoldTokens[
+const getBackgroundColor = (props: Partial<IBadgeProps>) => {
+  if (props.emphasis === "minimal") {
+    return "transparent";
+  } else if (props.emphasis === "subtle") {
+    return colorRampsSubtleTokens[
+      (props.color +
+        "RampSubtleBackground") as keyof typeof colorRampsSubtleTokens
+    ];
+  } else if (props.emphasis === "bold") {
+    return colorRampsBoldTokens[
       (props.color + "RampBoldBackground") as keyof typeof colorRampsBoldTokens
-    ]};
-  color: ${(props: Partial<IBadgeProps>) =>
-    colorRampsTextBoldTokens[
+    ];
+  }
+};
+
+const getTextColor = (props: Partial<IBadgeProps>) => {
+  if (props.emphasis === "bold") {
+    return colorRampsTextBoldTokens[
       (props.color + "RampBoldText") as keyof typeof colorRampsTextBoldTokens
-    ]};
+    ];
+  } else if (props.emphasis === "minimal" || props.emphasis === "subtle") {
+    return colorRampsTextSubtleTokens[
+      (props.color +
+        "RampSubtleText") as keyof typeof colorRampsTextSubtleTokens
+    ];
+  }
+};
+
+const getBorderColor = (props: Partial<IBadgeProps>) => {
+  if (props.emphasis === "minimal") {
+    return borderTokens.borderModerate;
+  } else {
+    return "transparent";
+  }
+};
+
+// Padding is 1px less than the spec, missing the border width
+const StyledBadge = styled.div`
+  padding: 3px 9px;
+  background: ${(props: Partial<IBadgeProps>) => getBackgroundColor(props)};
+  color: ${(props: Partial<IBadgeProps>) => getTextColor(props)};
+  border-color: ${(props: Partial<IBadgeProps>) => getBorderColor(props)};
+  border-width: 1px;
+  border-style: solid;
   width: fit-content;
   border-radius: 2px;
   display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
 `;
 
 export const Badge = (props: IBadgeProps) => {
-  const { label, color = "gray", ...restProps } = props;
+  const { label, color = "gray", emphasis = "bold", ...restProps } = props;
 
   return (
-    <StyledBadge color={color} {...restProps}>
+    <StyledBadge color={color} emphasis={emphasis} {...restProps}>
       {label.toUpperCase()}
     </StyledBadge>
   );

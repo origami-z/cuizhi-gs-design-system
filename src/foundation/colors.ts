@@ -387,33 +387,21 @@ export const colorRampsSubtleTokens = {
 
 export const colorRampsTextBoldTokens = {
   grayRampBoldText: paletteColors.whiteColor,
-
   redRampBoldText: paletteColors.whiteColor,
-
   orangeRampBoldText: paletteColors.whiteColor,
-
   yellowRampBoldText: paletteColors.gray090Color,
-
   limeRampBoldText: paletteColors.whiteColor,
-
   greenRampBoldText: paletteColors.whiteColor,
-
   tealRampBoldText: paletteColors.whiteColor,
-
   turquoiseRampBoldText: paletteColors.whiteColor,
-
   aquaRampBoldText: paletteColors.whiteColor,
-
   blueRampBoldText: paletteColors.whiteColor,
-
   ultramarineRampBoldText: paletteColors.whiteColor,
-
   purpleRampBoldText: paletteColors.whiteColor,
-
   pinkRampBoldText: paletteColors.whiteColor,
 };
 
-export const colorRampsTextSubtle = {
+export const colorRampsTextSubtleTokens = {
   grayRampSubtleText: paletteColors.gray080Color,
   redRampSubtleText: paletteColors.red060Color,
   orangeRampSubtleText: paletteColors.orange060Color,
@@ -447,7 +435,7 @@ export const colorMapping = {
   ...colorRampsBoldTokens,
   ...colorRampsSubtleTokens,
   ...colorRampsTextBoldTokens,
-  ...colorRampsTextSubtle,
+  ...colorRampsTextSubtleTokens,
 };
 
 // export const baseMappings = {

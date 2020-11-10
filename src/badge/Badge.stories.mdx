@@ -14,13 +14,29 @@ Markdown documentation.
 <!--- This is your Story template function, shown here in React -->
 
 <Story name="All">
-  <BadgeStoryContainer heading="Bold">
-    {ColorValues.map((colorValue) => (
-      <StyledBadgeContainer>
-        <Badge label={colorValue} color={colorValue} />
-      </StyledBadgeContainer>
-    ))}
-  </BadgeStoryContainer>
+  <div style={{ display: "flex", justifyContent: "space-around" }}>
+    <BadgeStoryContainer heading="Bold">
+      {ColorValues.map((colorValue) => (
+        <StyledBadgeContainer>
+          <Badge label={colorValue} color={colorValue} />
+        </StyledBadgeContainer>
+      ))}
+    </BadgeStoryContainer>
+    <BadgeStoryContainer heading="Subtle">
+      {ColorValues.map((colorValue) => (
+        <StyledBadgeContainer>
+          <Badge label={colorValue} color={colorValue} emphasis="subtle" />
+        </StyledBadgeContainer>
+      ))}
+    </BadgeStoryContainer>
+    <BadgeStoryContainer heading="Minimal">
+      {ColorValues.map((colorValue) => (
+        <StyledBadgeContainer>
+          <Badge label={colorValue} color={colorValue} emphasis="minimal" />
+        </StyledBadgeContainer>
+      ))}
+    </BadgeStoryContainer>
+  </div>
 </Story>
 
 <Canvas>
