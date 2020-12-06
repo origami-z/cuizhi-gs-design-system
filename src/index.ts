@@ -1,5 +1,6 @@
-import * as colors from './foundation/colors';
+import * as colors from "./foundation/colors";
 
 export { colors };
 
-export * from './button';
+export * from "./button";
+export * from "./badge";
