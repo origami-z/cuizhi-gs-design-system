@@ -5,8 +5,9 @@ name: Release
 
 # the event that will trigger the action
 on:
-  push:
-    branches: [master]
+  pull_request:
+    branches:
+      - develop
 
 # what the action will do
 jobs:
@@ -14,7 +15,7 @@ jobs:
     # the operating system it will run on
     runs-on: ubuntu-latest
     # this check needs to be in place to prevent a publish loop with auto and github actions
-    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    if: "contains(github.event.head_commit.message, 'canary build') && contains(github.event.head_commit.message, 'canary build')"
     # the list of steps that the action will go through
     steps:
       - uses: actions/checkout@v2
@@ -32,7 +33,7 @@ jobs:
           restore-keys: |
             yarn-deps-${{ hashFiles('yarn.lock') }}
 
-      - name: Create Release
+      - name: Create Canary Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -42,4 +43,4 @@ jobs:
           yarn build:esbuild --production
           yarn build:tsc
           yarn check-types
-          yarn release
+          yarn canary

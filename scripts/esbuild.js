@@ -8,10 +8,20 @@ const argv = yargs
   //     type: "number",
   //   },
   // })
-  .option("watch", { alias: "w", description: "Watch mode", type: "boolean" })
+  .option("watch", {
+    alias: "w",
+    description:
+      "Watch mode, using chokidar to rerun the build when a file change is detected in src folder.",
+    type: "boolean",
+  })
   .option("verbose", {
     alias: "v",
     description: "Verbose mode",
+    type: "boolean",
+  })
+  .option("production", {
+    alias: "p",
+    description: "Production build",
     type: "boolean",
   })
   .help()
@@ -27,23 +37,22 @@ const argv = yargs
 //   }
 // }
 
-const build = () => {
+const build = (isProductionBuild) => {
   const esbuild = require("esbuild");
   const entry = "src/index.ts";
   console.log("Build with esbuild", entry);
   esbuild.buildSync({
     entryPoints: [entry],
     bundle: true,
-    // loader: { ".js": "jsx" },
-    // minify: true,
+    minify: isProductionBuild || false,
     sourcemap: true,
-    // format: "esm",
     target: ["chrome58", "firefox57", "safari11", "edge16"],
-    outfile: "esout/index.js",
+    outfile: "dist/index.js",
     external: ["react", "react-dom"],
     define: {
-      // TODO: Switch below to support arg
-      "process.env.NODE_ENV": '"production"',
+      "process.env.NODE_ENV": isProductionBuild
+        ? '"production"'
+        : '"development"',
     },
   });
 };
@@ -59,5 +68,5 @@ if (argv.watch) {
     build();
   });
 } else {
-  build();
+  build(argv.production);
 }
