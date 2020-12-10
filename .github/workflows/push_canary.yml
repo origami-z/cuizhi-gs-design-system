@@ -7,7 +7,12 @@ name: Release
 on:
   pull_request:
     branches:
-      - develop
+      - "!develop"
+  #     - develop
+  # push:
+  #   branches:
+  #   - '!master'
+  #   - '!develop'
 
 # what the action will do
 jobs:
