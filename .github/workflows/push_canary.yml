@@ -4,16 +4,17 @@
 name: Release Canary
 
 # the event that will trigger the action
+# on: push
+#   pull_request:
+#     branches:
+#       - develop
+# For targets are not develop
+# - "!develop"
 on:
-  pull_request:
+  push:
     branches:
-      - develop
-      # For targets are not develop
-      # - "!develop"
-  # push:
-  #   branches:
-  #   - '!master'
-  #   - '!develop'
+      - "!master"
+      - "!develop"
 
 # what the action will do
 jobs:
