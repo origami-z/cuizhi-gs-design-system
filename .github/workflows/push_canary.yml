@@ -1,7 +1,7 @@
 # .github/workflows/push.yml
 
 ## name of our action
-name: Release
+name: Release Canary
 
 # the event that will trigger the action
 on:
