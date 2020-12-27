@@ -1,0 +1,109 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { Icon } from "./icon";
+import { IconDocsWrapper } from "./icon.docs";
+import * as colors from "./colors";
+
+<Meta
+  title="Foundation/Icon"
+  argTypes={{
+    iconColor: {
+      control: {
+        type: "select",
+        options: [
+          "iconAction",
+          "iconPrimary",
+          "iconSecondary",
+          "iconReversed",
+          "iconContrast",
+        ],
+      },
+    },
+  }}
+/>
+
+export const Template = (args) => {
+  const { name, ...restArgs } = args;
+  return (
+    <IconDocsWrapper {...restArgs}>
+      <Icon>{name}</Icon>
+    </IconDocsWrapper>
+  );
+};
+
+export const TemplateGeneral = (args) => (
+  <IconDocsWrapper {...args}>
+    <Icon>account_balance</Icon>
+    <Icon>account_balance_wallet</Icon>
+    <Icon>alarm</Icon>
+    <Icon>alarm_add</Icon>
+    <Icon>alarm_off</Icon>
+    <Icon>alarm_on</Icon>
+    <Icon>all_out</Icon>
+    <Icon>announcement</Icon>
+    <Icon>assessment</Icon>
+    <Icon>assignment</Icon>
+    <Icon>assignment_late</Icon>
+    <Icon>assignment_return</Icon>
+    <Icon>assignment_returned</Icon>
+    <Icon>assignment_turned_in</Icon>
+    <Icon>autorenew</Icon>
+    <Icon>backup</Icon>
+    <Icon>book</Icon>
+    <Icon>bookmark</Icon>
+    <Icon>bookmark_border</Icon>
+    <Icon>bookmarks</Icon>
+    <Icon>fingerprint</Icon>
+  </IconDocsWrapper>
+);
+
+export const TemplateDevelopment = (args) => (
+  <IconDocsWrapper {...args}>
+    <Icon>bug_report</Icon>
+    <Icon>build</Icon>
+    <Icon>cached</Icon>
+    <Icon>change_history</Icon>
+    <Icon>code</Icon>
+    <Icon>compare_arrows</Icon>
+    <Icon>dashboard</Icon>
+    <Icon>delete</Icon>
+    <Icon>delete_forever</Icon>
+    <Icon>delete_outlined</Icon>
+    <Icon>description</Icon>
+    <Icon>dns</Icon>
+    <Icon>extension</Icon>
+    <Icon>get_app</Icon>
+    <Icon>gif</Icon>
+    <Icon>history</Icon>
+    <Icon>hourglass_empty</Icon>
+    <Icon>hourglass_full</Icon>
+    <Icon>http</Icon>
+    <Icon>https</Icon>
+  </IconDocsWrapper>
+);
+
+# Icon
+
+Refer to Material Icons [website](https://material.io/resources/icons/) for a complete list of supported icons.
+
+<Story
+  name="Example Icons"
+  args={{ name: "face", fontSize: "36px", iconColor: "iconPrimary" }}
+>
+  {Template.bind({})}
+</Story>
+
+## Category
+
+Refer to [Iconography page](https://design.gs.com/d/design-system/foundation/iconography) for full list of categories.
+
+### General
+
+<Story name="General" args={{ iconColor: "iconPrimary" }}>
+  {TemplateGeneral.bind({})}
+</Story>
+
+### Development
+
+<Story name="Development" args={{ iconColor: "iconPrimary" }}>
+  {TemplateDevelopment.bind({})}
+</Story>
