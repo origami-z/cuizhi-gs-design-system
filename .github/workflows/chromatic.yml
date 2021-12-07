@@ -15,6 +15,7 @@ jobs:
           fetch-depth: 0 # Required to retrieve git history
       - run: yarn
       - run: yarn test # adds the test command
+      - run: cypress run-ct # cypress component test
       - uses: chromaui/action@v1
         # options required to the GitHub chromatic action
         with:
