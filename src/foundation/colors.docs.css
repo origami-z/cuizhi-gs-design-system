@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.colorLabelsContainer {
+  flex: 0 0 30%;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+.colorName {
+  font-weight: 700;
+  color: var(--text-primary-color);
+}
+
+.swatchOuterContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.swatchInnerContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.swatchColor {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.swatchColorCode {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  overflow: hidden;
+  color: var(--text-secondary-color);
+}
