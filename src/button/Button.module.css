@@ -1,0 +1,130 @@
+:root {
+  --button-primary-color: var(--blue-060-color);
+  --button-secondary-color: var(--gray-020-color);
+  --button-destructive-color: var(--red-060-color);
+  --button-info-color: var(--blue-100-color);
+  --button-contrast-color: var(--white-color);
+
+  --button-primary-hover-color: linear-gradient(
+      0deg,
+      var(--gray-100-color-10-opacity),
+      var(--gray-100-color-10-opacity)
+    ),
+    var(--button-primary-color);
+
+  --button-secondary-hover-color: linear-gradient(
+      0deg,
+      var(--gray-100-color-10-opacity),
+      var(--gray-100-color-10-opacity)
+    ),
+    var(--button-secondary-color);
+
+  --button-primary-active-color: linear-gradient(
+      0deg,
+      var(--gray-100-color-20-opacity),
+      var(--gray-100-color-20-opacity)
+    ),
+    var(--button-primary-color);
+
+  --button-secondary-active-color: linear-gradient(
+      0deg,
+      var(--gray-100-color-20-opacity),
+      var(--gray-100-color-20-opacity)
+    ),
+    var(--button-secondary-color);
+
+  --button-minimal-background: var(--transparent-color);
+
+  --button-text-primary-color: var(--white-color);
+  --button-text-secondary-color: var(--gray-090-color);
+  --button-text-destructive-color: var(--white-color);
+  --button-text-info-color: var(--white-color);
+  --button-text-contrast-color: var(--gray-090-color);
+
+  --button-text-primary-minimal-color: var(--blue-060-color);
+  --button-text-secondary-minimal-color: var(--gray-090-color);
+  --button-text-destructive-minimal-color: var(--red-060-color);
+}
+
+.Button {
+  font-family: var(--font-family-medium);
+  box-sizing: border-box;
+}
+
+.primary-bold {
+  background: var(--button-primary-color);
+  color: var(--button-text-primary-color);
+  border: none;
+}
+.primary-bold:hover {
+  background: var(--button-primary-hover-color);
+}
+.primary-bold:active {
+  background: var(--button-primary-active-color);
+}
+
+.secondary-bold {
+  background: var(--button-secondary-color);
+  color: var(--button-text-secondary-color);
+  border: none;
+}
+.secondary-bold:hover {
+  background: var(--button-secondary-hover-color);
+}
+.secondary-bold:active {
+  background: var(--button-secondary-active-color);
+}
+
+.destructive-bold {
+  background: var(--button-destructive-color);
+  color: var(--button-text-destructive-color);
+  border: none;
+}
+
+.info-bold {
+  background: var(--button-info-color);
+  color: var(--button-text-info-color);
+  border: none;
+}
+
+.contrast-bold {
+  background: var(--button-contrast-color);
+  color: var(--button-text-contrast-color);
+  border: none;
+}
+
+.small {
+  height: 24px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 12px;
+}
+
+.medium {
+  height: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+
+.large {
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 24px;
+}
+
+.x-large {
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 32px;
+}
+
+.square {
+  border-radius: 2px;
+}
+
+.circle {
+  border-radius: 999px;
+}

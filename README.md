@@ -2,7 +2,7 @@
 
 Yet another React implmentation of GSDS.
 
-More to come soon.
+Reference from Figma files available at https://design.gs.com/designers.
 
 ## Develop
 

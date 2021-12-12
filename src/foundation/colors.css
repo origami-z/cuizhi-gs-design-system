@@ -157,6 +157,9 @@
   --yellow-090-color: #38251b;
   --yellow-100-color: #1c1613;
 
+  --gray-100-color-10-opacity: rgba(14, 23, 31, 0.1);
+  --gray-100-color-20-opacity: rgba(14, 23, 31, 0.2);
+
   --surface-primary-color: var(--white-color);
   --surface-secondary-color: var(--gray-010-color);
   --surface-tertiary-color: var(--gray-020-color);
@@ -171,21 +174,6 @@
   --border-moderate-color: var(--gray-040-color);
   --border-bold-color: var(--gray-060-color);
   --border-contrast-color: var(--gray-090-color);
-
-  --button-primary-color: var(--blue-060-color);
-  --button-secondary-color: var(--gray-020-color);
-  --button-tertiary-color: var(--transparent-color);
-  --button-destructive-color: var(--red-060-color);
-  --button-primary-minimal-color: var(--transparent-color);
-  --button-secondary-minimal-color: var(--transparent-color);
-  --button-destructive-minimal-color: var(--transparent-color);
-  --button-text-primary-color: var(--white-color);
-  --button-text-secondary-color: var(--gray-090-color);
-  --button-text-tertiary-color: var(--gray-070-color);
-  --button-text-destructive-color: var(--wh-ite-color);
-  --button-text-primary-minimal-color: var(--blue-060-color);
-  --button-text-secondary-minimal-color: var(--gray-090-color);
-  --button-text-destructive-minimal-color: var(--red-060-color);
 
   --text-primary-color: var(--gray-090-color);
   --text-secondary-color: var(--gray-070-color);

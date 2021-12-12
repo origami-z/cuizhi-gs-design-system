@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Goldman Sans";
+  src: url(/font/GoldmanSans_W_Rg.woff2);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+@font-face {
+  font-family: "Goldman Sans Medium";
+  src: url(/font/GoldmanSans_W_Md.woff2);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.2px;
+}
+
+:root {
+  /* Goldman Sans - https://design.gs.com/foundation/typography/goldman-sans */
+  --font-family-regular: "Goldman Sans";
+  --font-family-medium: "Goldman Sans Medium";
+}

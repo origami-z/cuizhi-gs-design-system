@@ -1,4 +1,5 @@
-import "../src/foundation/colors.css";
+import "../src/index.css";
+import "../src/foundation/index.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
