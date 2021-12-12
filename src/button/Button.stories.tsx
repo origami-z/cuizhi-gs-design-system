@@ -9,10 +9,16 @@ export default {
   component: Button,
 };
 
-export const Component: Story<ButtonProps> = (args) => (
-  <Button {...args}>Button</Button>
-);
-Component.args = {};
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+
+export const Component = Template.bind({});
+Component.args = {
+  actionStyle: "primary",
+  emphasis: "bold",
+  size: "medium",
+  shape: "square",
+  children: "Button",
+};
 
 export const ActionStyles: Story<ButtonProps> = (args) => (
   <div className={styles.docRow}>
@@ -36,7 +42,7 @@ export const ActionStyles: Story<ButtonProps> = (args) => (
 
 export const Sizes = () => (
   <div>
-    <div>
+    <div className={styles.docRow}>
       <Button size="small" shape="square">
         Button
       </Button>
@@ -51,7 +57,7 @@ export const Sizes = () => (
       </Button>
     </div>
 
-    <div>
+    <div className={styles.docRow}>
       <Button size="small" shape="circle">
         Button
       </Button>

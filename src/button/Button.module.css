@@ -62,6 +62,10 @@
 .primary-bold:active {
   background: var(--button-primary-active-color);
 }
+.primary-bold:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-box-shadow);
+}
 
 .secondary-bold {
   background: var(--button-secondary-color);
@@ -73,6 +77,10 @@
 }
 .secondary-bold:active {
   background: var(--button-secondary-active-color);
+}
+.secondary-bold:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-box-shadow);
 }
 
 .destructive-bold {

@@ -181,4 +181,8 @@
   --text-link-color: var(--blue-060-color);
   --text-destructive-color: var(--red-060-color);
   --text-reversed-color: var(--white-color);
+
+  --focus-color: var(--blue-060-color);
+  --focus-box-shadow: inset 0 0 0 1px var(--white-color),
+    0 0 0 1px var(--focus-color);
 }
