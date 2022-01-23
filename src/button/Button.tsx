@@ -7,7 +7,7 @@ export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEleme
 
 export const Button = (props: IButtonProps) => {
     const style: CSSProperties  = {
-        background: colorMapping.blue060Color
+        background: colorMapping.red060Color
     };
 
     return (
